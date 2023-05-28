@@ -1,0 +1,64 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing) 100px var(--spacing);
+  background-color: #cfcfcf;
+  background-image: url("../../assets/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: var(--box-shadow);
+  z-index: 100;
+
+  @media (max-width: 500px) {
+    padding: var(--spacing) var(--spacing) 10px;
+  }
+
+  &__logo {
+    width: 150px;
+    transition: all 0.3s;
+    transform: rotate(0deg);
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+
+    & > img {
+      width: 100%;
+    }
+
+    &:hover {
+      animation-name: logoAnimation;
+    }
+  }
+
+  &__link {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1976d2;
+    transition: color 0.3s;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #4297eb;
+    }
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

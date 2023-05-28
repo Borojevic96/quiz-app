@@ -1,0 +1,26 @@
+.quiz-list {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+
+  :global(.MuiListItem-root) {
+    @media (max-width: 500px) {
+      padding-right: 65px;
+    }
+  }
+
+  :global(.MuiListItem-container) {
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    &:last-child > :global(.MuiListItem-root) {
+      border-bottom: none;
+    }
+  }
+  :global(.MuiButtonBase-root[aria-label="View"]) {
+    margin-right: 0;
+  }
+}

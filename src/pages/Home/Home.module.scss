@@ -1,0 +1,40 @@
+.home {
+  max-width: 1100px;
+  width: 100%;
+  padding: var(--spacing);
+  margin: 0 auto;
+
+  &__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+
+      & > button {
+        width: 100%;
+        margin: var(--spacing) 0;
+      }
+    }
+  }
+
+  &__dialog {
+    :global(.MuiDialogTitle-root) {
+      font-weight: 700;
+      line-height: normal;
+      box-shadow: var(--box-shadow);
+    }
+
+    :global(.MuiDialogActions-root) {
+      & > button {
+        width: 100%;
+      }
+    }
+
+    :global(.MuiDialogActions-root) {
+      padding: calc(var(--spacing) / 2) var(--spacing);
+    }
+  }
+}
