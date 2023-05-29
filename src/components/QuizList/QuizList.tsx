@@ -11,8 +11,8 @@ import {
 } from "@mui/material";
 import { DeleteOutlined, Slideshow } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
-import { getLoading, getQuizzes } from "../../selectors/app.selectors.ts";
-import { Quiz, QuizActions } from "../../types";
+import { Quiz, QuizActions } from "@types";
+import { getLoading, getQuizzes } from "@selectors/app.selectors.ts";
 import style from "./QuizList.module.scss";
 
 const QuizList: React.FC<QuizActions> = ({

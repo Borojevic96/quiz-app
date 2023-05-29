@@ -9,11 +9,11 @@ import {
   Tooltip,
 } from "@mui/material";
 import { DeleteOutlined, Add } from "@mui/icons-material";
-import { Question, Quiz } from "../../types";
-import { getQuestions, getQuizzes } from "../../selectors/app.selectors.ts";
-import restClient from "../../utils/restClient.ts";
-import { setLoading, setQuizzes } from "../../reducer/app.ts";
-import fakeNetworkDelay from "../../utils/fakeNetworkDelay.ts";
+import fakeNetworkDelay from "@utils/fakeNetworkDelay.ts";
+import restClient from "@utils/restClient.ts";
+import { Question, Quiz } from "@types";
+import { getQuestions, getQuizzes } from "@selectors/app.selectors.ts";
+import { setLoading, setQuizzes } from "@reducers/app.ts";
 import style from "./QuizForm.module.scss";
 
 export interface QuizFormValues extends Omit<Quiz, "id"> {

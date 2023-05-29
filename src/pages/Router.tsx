@@ -1,8 +1,8 @@
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Layout from "../components/Layout";
-import Home from "./Home/Home.tsx";
-import QuizView from "./QuizView";
-import NoRoute from "./NoRoute.tsx";
+import Home from "@pages/Home";
+import NoRoute from "@pages/NoRoute.tsx";
+import QuizView from "@pages/QuizView";
+import Layout from "@components/Layout";
 
 const RouterManager = () => {
   return (

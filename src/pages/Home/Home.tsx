@@ -9,17 +9,14 @@ import {
   DialogTitle,
 } from "@mui/material";
 import { QuizRounded } from "@mui/icons-material";
-import restClient from "../../utils/restClient.ts";
-import { setLoading, setQuestions, setQuizzes } from "../../reducer/app.ts";
-import { Question, Quiz, QuizActions } from "../../types";
-import {
-  questionsMockedData,
-  quizzesMockedData,
-} from "../../utils/dataProvider.ts";
-import QuizList from "../../components/QuizList";
-import QuizForm from "../../components/QuizForm";
-import { getQuizzes } from "../../selectors/app.selectors.ts";
-import fakeNetworkDelay from "../../utils/fakeNetworkDelay.ts";
+import restClient from "@utils/restClient.ts";
+import { questionsMockedData, quizzesMockedData } from "@utils/dataProvider.ts";
+import fakeNetworkDelay from "@utils/fakeNetworkDelay.ts";
+import { Quiz, QuizActions, Question } from "@types";
+import { getQuizzes } from "@selectors/app.selectors.ts";
+import { setLoading, setQuestions, setQuizzes } from "@reducers/app.ts";
+import QuizList from "@components/QuizList";
+import QuizForm from "@components/QuizForm";
 import style from "./Home.module.scss";
 
 interface SelectedQuiz {

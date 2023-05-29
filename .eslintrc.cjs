@@ -13,6 +13,22 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json'
   },
+  settings: {
+    "import/resolver": {
+      alias: {
+        map: [
+          ['@assets', './src/assets'],
+          ['@components', './src/components'],
+          ['@pages', './src/pages'],
+          ['@reducers', './src/reducers'],
+          ['@selectors', './src/selectors'],
+          ['@types', './src/types'],
+          ['@utils', './src/utils'],
+        ],
+        extensions: ['.ts', '.tsx'],
+      },
+    },
+  },
   ignorePatterns: ["vite.config.ts"],
   plugins: ['react-refresh'],
   rules: {

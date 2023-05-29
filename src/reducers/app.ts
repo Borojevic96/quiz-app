@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Question, Quiz } from "../types";
+import { Question, Quiz } from "@types";
 
 interface QuizState {
   quizzes: Quiz[];

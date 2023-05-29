@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import quizReducer from "./reducer/app.ts";
+import quizReducer from "@reducers/app.ts";
 
 export const store = configureStore({
   reducer: {

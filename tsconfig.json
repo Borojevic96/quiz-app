@@ -22,7 +22,16 @@
     "typeRoots" : ["node_modules/@types", "src/types"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@reducers/*": ["./src/reducers/*"],
+      "@selectors/*": ["./src/selectors/*"],
+      "@types": ["./src/types"],
+      "@utils/*": ["./src/utils/*"]
+    }
   },
   "references": [{ "path": "./tsconfig.node.json" }]
 }

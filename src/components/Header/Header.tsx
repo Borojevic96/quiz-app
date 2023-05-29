@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import quizLogo from "../../assets/quiz-logo.png";
+import quizLogo from "@assets/quiz-logo.png";
 import style from "./Header.module.scss";
 
 const Header = () => {

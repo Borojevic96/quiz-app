@@ -1,4 +1,4 @@
-import { Question, Quiz } from "../types";
+import { Question, Quiz } from "@types";
 
 const questionsMockedData: Question[] = [
   {
